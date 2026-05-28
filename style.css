@@ -1,27 +1,76 @@
-/* 页面整体样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Microsoft YaHei", sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     text-align: center;
-    background-color: #f0f8ff;
-    margin-top: 100px;
+    width: 90%;
+    max-width: 450px;
 }
 
-/* 标题样式 */
 h1 {
-    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
-/* 按钮样式 */
-button {
-    padding: 12px 24px;
+p {
     font-size: 16px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    color: #666;
+    margin-bottom: 25px;
 }
 
-button:hover {
-    background-color: #2980b9;
+.btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn1, .btn2 {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1 {
+    background: #4facfe;
+    color: white;
+}
+
+.btn2 {
+    background: #ff6b6b;
+    color: white;
+}
+
+.btn1:hover {
+    background: #3b8bfe;
+}
+
+.btn2:hover {
+    background: #ff5252;
+}
+
+.msg {
+    font-size: 15px;
+    color: #28a745;
+    font-weight: bold;
 }
