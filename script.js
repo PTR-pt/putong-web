@@ -1,6 +1,11 @@
-const btn1 = document.querySelector(".btn1");
-const msg = document.getElementById("msg");
+const likeBtn = document.getElementById("likeBtn");
+const sayHi = document.getElementById("sayHi");
+const tips = document.getElementById("tips");
 
-btn1.addEventListener("click", () => {
-    msg.textContent = "✅ 网站美化成功！超好看吧！";
+likeBtn.addEventListener("click", () => {
+    tips.textContent = "👍 谢谢你的点赞！";
+});
+
+sayHi.addEventListener("click", () => {
+    tips.textContent = "👋 你好！很高兴认识你！";
 });

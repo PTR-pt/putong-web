@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>我的个人主页</title>
     <link rel="stylesheet" href="style.css">
+    <!-- 引入图标库（社交图标） -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="card">
-        <h1>你好，我是 PTR-pt</h1>
-        <p>这是我搭建的第一个网站，超好看！</p>
-        <div class="btn-group">
-            <button class="btn1">点击我</button>
-            <button class="btn2">联系我</button>
+        <!-- 头像 -->
+        <div class="avatar">
+            <i class="fa-solid fa-user"></i>
         </div>
-        <p class="msg" id="msg"></p>
+
+        <h1>PTR-pt</h1>
+        <p class="desc">正在学习搭建网站 | 热爱编程</p>
+
+        <div class="btn-group">
+            <button id="likeBtn">点赞一下</button>
+            <button id="sayHi">打个招呼</button>
+        </div>
+
+        <p id="tips" class="tips"></p>
+
+        <!-- 社交图标 -->
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-weixin"></i></a>
+            <a href="#"><i class="fa-brands fa-qq"></i></a>
+        </div>
     </div>
 
     <script src="script.js"></script>
